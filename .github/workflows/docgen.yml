@@ -23,11 +23,10 @@ jobs:
       - name: Add CNAME
         run: |
           pwd
-          cd
           cd src
           unlink config.json
           echo "Config Removed."
-          cd
+          cd -
           pwd
           cd docs
           pwd
